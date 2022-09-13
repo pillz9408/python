@@ -20,6 +20,30 @@
 태그 찾기 = soup.select("tag_name")
 특정 태그와 클래스 = soup.select ('tag_name.class_name')
 특정 태그의 하위 태그   > 를 통해 하위 태그 지정
+request 라이브러리 사용.
+
+크롤링시에 사용하는 라이브러리
+- Selenium 라이브러리 : 브라우저 동작을 자동화 할수 있는 오픈 소스 라이브러리
+* 동적인 데이터 수집 가능 (로그인, 입력 후 보이는 정보)  but 속도 느림 , 브라우저를 통한 연속적 접근  + Chrome driver 라이브러리 사용
+
+
+105.0.5195.102
+
+WebDriver 조작하기
+창크기 1) 최대화 driver.maximize_window()
+	 2) 최소화 driver.minimize_window()
+닫기    1) 현재 탭 driver.close()
+	 2) 브라우저 driver.quit()
+이동	 1) 뒤로가기 driver.back()
+	 2) 앞으로 가기 driver.forward()
+	 3) 해당 탭으로 이동 driver.switch_to.window(driver.window_handles[0]) #[0] 인덱스 = 첫번째 탭으로 이동
+
+Selenium의 elements
+- find_elements_by_css_selector(" ") : 상대주소
+- find_elements_by_xpath(" ") : 절대주소
+- find_elements_by_name(" ")
+- find_elements_by_id(" ")
+* elements = 선택자에 해당하는 모든 요소가 선택됨, element = 해당 선택자에 해당하는 첫번째 하나의 요소가 선택됨
 
 
 
