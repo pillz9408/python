@@ -45,5 +45,13 @@ Selenium의 elements
 - find_elements_by_id(" ")
 * elements = 선택자에 해당하는 모든 요소가 선택됨, element = 해당 선택자에 해당하는 첫번째 하나의 요소가 선택됨
 
+WebDriver 키보드 입력 / 클릭하기
+
+키보드  = from selenium.webdriver.common.keys import Keys
+키전달 search = driver.find_element_by_id("query")
+
+	문자입력 - search.send_keys("전달하고싶은 문자")
+	엔터키 - search.send_keys(Keys.ENTER)
+	마우스 클릭 - search.click()
 
 
