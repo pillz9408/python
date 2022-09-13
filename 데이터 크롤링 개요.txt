@@ -1,0 +1,25 @@
+데이터 크롤링 개요
+
+크롤링 (Web Crawler)
+	- 자동화 된 방법으로 웹에서 다양한 정보를 수집하는 소프트웨어
+
+	빅데이터 - 디지털 환경에서 생성되는 수치, 문자, 이미지, 영상 데이터를 모두 포함하는 대규모 데이터
+		5V = 규모(Volume), 다양성(Variety), 정확성(Veracity), 가치(Value), 속도(Velocity) 
+
+	수집데이터 형태
+	1) 정형 - 관계형 데이터 베이스, 스프레드시트, CSV
+	2) 반정형 
+	3) 비정형
+
+크롤링(Crawling)과 스크래핑(Scraping)의 차이
+크롤링 - 동적
+스크래핑 - 정적
+
+스크래핑에 사용되는 라이브러리
+- BeautifulSoup 라이브러리 : Request 로 받은 데이터를 BeautifulSoup객체화를 진행해주는 오픈소스 라이브러리
+태그 찾기 = soup.select("tag_name")
+특정 태그와 클래스 = soup.select ('tag_name.class_name')
+특정 태그의 하위 태그   > 를 통해 하위 태그 지정
+
+
+
