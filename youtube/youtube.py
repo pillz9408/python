@@ -35,7 +35,7 @@ chrome_options.add_argument("--mute-audio")
 browser = webdriver.Chrome("c:/chromedriver/chromedriver.exe")
 
 # 엑셀 처리 선언
-workbook = xlsxwriter.Workbook("you_crawl_result.xlsx")
+workbook = xlsxwriter.Workbook("you_crawl_result2.xlsx")
 
 # 워크 시트
 worksheet = workbook.add_worksheet()
