@@ -49,7 +49,7 @@ browser.implicitly_wait(5)
 browser.set_window_size(1920, 1280)
 
 # 페이지 이동
-browser.get('https://www.youtube.com/watch?v=-kGLuUNX77U')
+browser.get('https://www.youtube.com/watch?v=mkqlYnWP_HM')
 
 # 5초간 대기
 time.sleep(5)
