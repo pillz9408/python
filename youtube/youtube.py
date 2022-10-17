@@ -35,7 +35,7 @@ chrome_options.add_argument("--mute-audio")
 browser = webdriver.Chrome("c:/chromedriver/chromedriver.exe")
 
 # 엑셀 처리 선언
-workbook = xlsxwriter.Workbook("you_crawl_result10_07.xlsx")
+workbook = xlsxwriter.Workbook("you_crawl_result.xlsx")
 
 # 워크 시트
 worksheet = workbook.add_worksheet()
@@ -46,8 +46,7 @@ browser.implicitly_wait(5)
 # 브라우저 사이즈
 # minimize_window() : 최소화
 # maximize_window() : 최대화
-browser.set_window_size(1920, 1280)
-
+browser.maximize_window()
 # 페이지 이동
 browser.get('https://www.youtube.com/watch?v=mkqlYnWP_HM')
 
@@ -160,7 +159,7 @@ for dom in comment:
     print()
 
 # 브라우저 종료
-browser.quit()
+browser.close()
 
 # 엑셀 파일 닫기
 workbook.close()
