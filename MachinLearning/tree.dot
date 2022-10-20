@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="mean concave points <= 0.049\nsamples = 426\nvalue = [159, 267]\nclass = 양성", fillcolor="#afd7f4"] ;
+1 [label="worst area <= 952.9\nsamples = 260\nvalue = [13, 247]\nclass = 양성", fillcolor="#43a2e6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+7 [label="area error <= 42.19\nsamples = 252\nvalue = [7, 245]\nclass = 양성", fillcolor="#3fa0e6"] ;
+1 -> 7 ;
+13 [label="samples = 247\nvalue = [4, 243]\nclass = 양성", fillcolor="#3c9fe5"] ;
+7 -> 13 ;
+14 [label="samples = 5\nvalue = [3, 2]\nclass = 악성", fillcolor="#f6d5bd"] ;
+7 -> 14 ;
+8 [label="samples = 8\nvalue = [6, 2]\nclass = 악성", fillcolor="#eeab7b"] ;
+1 -> 8 ;
+2 [label="worst area <= 785.8\nsamples = 166\nvalue = [146, 20]\nclass = 악성", fillcolor="#e99254"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="worst texture <= 23.74\nsamples = 30\nvalue = [13, 17]\nclass = 양성", fillcolor="#d0e8f9"] ;
+2 -> 3 ;
+5 [label="samples = 14\nvalue = [0, 14]\nclass = 양성", fillcolor="#399de5"] ;
+3 -> 5 ;
+6 [label="worst concavity <= 0.358\nsamples = 16\nvalue = [13, 3]\nclass = 악성", fillcolor="#eb9e67"] ;
+3 -> 6 ;
+9 [label="samples = 3\nvalue = [0, 3]\nclass = 양성", fillcolor="#399de5"] ;
+6 -> 9 ;
+10 [label="samples = 13\nvalue = [13, 0]\nclass = 악성", fillcolor="#e58139"] ;
+6 -> 10 ;
+4 [label="perimeter error <= 1.397\nsamples = 136\nvalue = [133, 3]\nclass = 악성", fillcolor="#e6843d"] ;
+2 -> 4 ;
+11 [label="samples = 2\nvalue = [0, 2]\nclass = 양성", fillcolor="#399de5"] ;
+4 -> 11 ;
+12 [label="samples = 134\nvalue = [133, 1]\nclass = 악성", fillcolor="#e5823a"] ;
+4 -> 12 ;
+}
